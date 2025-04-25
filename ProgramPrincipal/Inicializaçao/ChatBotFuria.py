@@ -8,6 +8,6 @@ CHAVE_API = os.getenv("TELEGRAM_TOKEN")
 bot = TeleBot(CHAVE_API)
 
 if CHAVE_API is None:
-    print("Erro: A chave da API não foi encontrada no arquivo .env.")
+    print("Erro: A chave da API não foi encontrada")
 else:
     print("Chave da API carregada com sucesso!")

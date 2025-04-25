@@ -7,15 +7,12 @@ def redes_sociais(mensagem):
 
     Acompanhe tudo sobre a FURIA nas redes sociais e fique por dentro de novidades, resultados e muito mais! Conecte-se com a nossa comunidade e mostre sua paixão pela nossa equipe.
 
-    ⚡ Instagram: [@furia](https://www.instagram.com/furia/)  
+    ⚡ Instagram: (www.instagram.com/furiagg)  
     
-    ⚡ Twitter (X): [@FURIA](https://twitter.com/FURIA)  
+    ⚡ Twitter (X): (x.com/FURIA)  
     
-    ⚡ Facebook: [@FURIA](https://www.facebook.com/FURIA)  
+    ⚡ Facebook: (//www.facebook.com/furiagg)  
     
-    ⚡ YouTube: [FURIA](https://www.youtube.com/c/FURIA)  
-    
-    ⚡ Twitch: [FURIA](https://www.twitch.tv/furia)
 
     Siga-nos, compartilhe e não perca nenhum momento da nossa jornada!
 
