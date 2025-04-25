@@ -5,10 +5,10 @@ def opcao2(mensagem):
     texto = """
     📅 Próximos Campeonatos da FURIA:
 
-    /Cs2Camps 🔫 Counter-Strike 2  
-    /ValorantCamps 🎯 Valorant  
-    /KingsCamps ⚽ Kings League
-    /Menu 📜 Voltar ao menu principal"""
+/Cs2Camps 🔫 Counter-Strike2  
+/ValorantCamps 🎯 Valorant  
+/KingsCamps ⚽ Kings League
+/Menu 📜 Voltar ao menu principal"""
     bot.send_message(mensagem.chat.id, texto)
 
 

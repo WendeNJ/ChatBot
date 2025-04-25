@@ -22,7 +22,7 @@ def responder(mensagem):
     opcoes = """
     ⚡ FALA, FURIOSO! ⚡
 
-Sou o **Furinha** 🐆, o bot oficial da FURIA, e tô aqui pra te ajudar no que precisar! Escolhe uma das opções abaixo:
+Olá, eu sou o Furinha 🐆, o assistente oficial da FURIA! Estou aqui para te ajudar com tudo o que você precisar. Selecione uma das opções abaixo e vamos lá! 💥
 
 /1 Elenco atual da FURIA 🧑‍🤝‍🧑  
 /2 Próximos campeonatos 📅  

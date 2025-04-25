@@ -23,12 +23,12 @@ def Cs(mensagem):
     elenco_cs2 = """
 🔫 Elenco atual da FURIA (CS2) –
 
-🐍 FalleN – Capitão e AWPer lendário  
+⚡ FalleN – Capitão e AWPer lendário  
 ⚡ YEKINDAR – Rifler explosivo e agressivo  
-🎯 yuurih – Consistente e decisivo  
-🔥 KSCERATO – Um dos melhores do Brasil  
-🧊 molodoy – Reforço promissor na line
-🧠 sidde – Coach cerebral e estrategista fora do servidor
+⚡ yuurih – Consistente e decisivo  
+⚡ KSCERATO – Um dos melhores do Brasil  
+⚡ molodoy – Reforço promissor na line
+⚡ sidde – Coach cerebral e estrategista fora do servidor
 
 Vamos pra cima, FURIOSO! 🐆💜 #DaleFURIA
 
@@ -42,11 +42,11 @@ def Valorant(mensagem):
     elenco_valorant = """
   🎯 Elenco atual da FURIA (Valorant) –:
 
-🧠 khalil  
-💥 havoc  
-🔥 heat  
-⚔️ raafa  
-🚀 pryze  
+⚡ khalil  
+⚡ havoc  
+⚡ heat  
+⚡ raafa  
+⚡ pryze  
 
     Vamos pra cima, FURIOSO! 🐆💜 #DaleFURIA
     
