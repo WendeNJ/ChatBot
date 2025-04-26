@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chat Oficial da FURIA - Acompanhe o time FURIA de perto">
+    <title>Furinha - Chat Oficial da FURIA</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <h1></h1>
+            <p>
+                Assistente oficial da FURIA! Veja o que você pode fazer comigo:
+            </p>
+
+            <div class="features" id="botFeatures">
+
+            </div>
+
+            <a class="button" href="https://t.me/FuriaFaBot" target="_blank" rel="noopener noreferrer">
+                Chamar no Telegram
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Projeto de Estágio - FURIA 2025
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const featuresContainer = document.getElementById('botFeatures');
+
+            const botFeatures = [
+                {
+
+                    title: "Elenco Atual",
+                    description: "Conheça os jogadores da FURIA",
+                    emoji: "🧑‍🤝‍🧑"
+                },
+                {
+
+                    title: "Próximos Campeonatos",
+                    description: "Calendário de competições",
+                    emoji: "📅"
+                },
+                {
+
+                    title: "Últimos Resultados",
+                    description: "Performance do time",
+                    emoji: "🏆"
+                },
+                {
+
+                    title: "História da FURIA",
+                    description: "Trajetória do time",
+                    emoji: "📖"
+                },
+                {
+
+                    title: "Produtos Oficiais",
+                    description: "Compre nossos produtos",
+                    emoji: "🛍️"
+                },
+                {
+
+                    title: "Redes Sociais",
+                    description: "Siga a FURIA online",
+                    emoji: "🌐"
+                },
+                {
+
+                    title: "Wallpaper FURIA",
+                    description: "Baixe wallpapers exclusivos",
+                    emoji: "🐆"
+                }
+            ];
+
+
+            botFeatures.forEach(feature => {
+                const featureCard = document.createElement('div');
+                featureCard.className = 'feature-card';
+                featureCard.innerHTML = `
+                    <div class="feature-icon">${feature.emoji}</div>
+                    <div class="feature-title">${feature.title}</div>
+                    <div class="feature-desc">${feature.description}</div>
+                    <div </div>
+                `;
+                featuresContainer.appendChild(featureCard);
+            });
+
+
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach((card, index) => {
+                card.style.animation = `fadeIn 0.5s ease-in-out ${index * 0.1}s forwards`;
+                card.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>
