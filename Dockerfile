@@ -11,7 +11,7 @@ WORKDIR  /ProgramPrincipal/Inicializaçao
 
 COPY  ./ProgramPrincipal /ProgramPrincipal/
 
-
+COPY ./requirements.txt /ProgramPrincipal/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
