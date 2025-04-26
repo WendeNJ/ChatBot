@@ -8,9 +8,6 @@ import ProgramPrincipal.Comandos.Produtos
 import ProgramPrincipal.Comandos.RedesSociais
 import ProgramPrincipal.Comandos.Wallpaper
 
-@bot.message_handler(commands=["7"])
-def opcao7(mensagem):
-    pass
 
 
 def Menu(mensagem):
