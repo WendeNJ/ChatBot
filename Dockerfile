@@ -9,7 +9,7 @@ WORKDIR  /ProgramPrincipal/Inicializaçao
 
 
 
-COPY COPY ./ProgramPrincipal /ProgramPrincipal/
+COPY  ./ProgramPrincipal /ProgramPrincipal/
 
 
 
