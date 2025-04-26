@@ -1,4 +1,4 @@
-from ProgramPrincipal.Inicializaçao.ChatBotFuria import bot
+from ProgramPrincipal.Inicializacao.ChatBotFuria import bot
 
 @bot.message_handler(commands=["6"])
 def redes_sociais(mensagem):

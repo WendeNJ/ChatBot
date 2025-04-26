@@ -1,5 +1,5 @@
 import time
-from ProgramPrincipal.Inicializaçao.ChatBotFuria import bot
+from ProgramPrincipal.Inicializacao.ChatBotFuria import bot
 import ProgramPrincipal.Comandos.Elenco
 import ProgramPrincipal.Comandos.Campeonatos
 import ProgramPrincipal.Comandos.Resultados

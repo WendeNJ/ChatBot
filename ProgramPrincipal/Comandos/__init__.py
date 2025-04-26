@@ -2,7 +2,7 @@
 
 
 
-from ProgramPrincipal.Inicializaçao.ChatBotFuria import bot
+from ProgramPrincipal.Inicializacao.ChatBotFuria import bot
 
 
 @bot.message_handler(commands=["cs"])
