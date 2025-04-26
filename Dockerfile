@@ -4,19 +4,15 @@ FROM python:3.11-slim
 
 LABEL authors="Wenderson"
 
-WORKDIR /ProgramPrincipal/Inicializaçao
 
-COPY ./ProgramPrincipal /ProgramPrincipal/
-COPY ./requirements.txt /ProgramPrincipal/Inicializaçao/
-
+WORKDIR /ProgramPrincipal/Inicializacao
+COPY ProgramPrincipal/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-
-
-
+COPY ProgramPrincipal .
 
 
 EXPOSE 5000
 
 
-CMD ["python", "/ProgramPrincipal/Inicializaçao/ChatBotFuria.py"]
+CMD ["python", "ChatBotFuria.py"]
