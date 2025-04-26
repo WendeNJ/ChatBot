@@ -5,7 +5,7 @@ FROM python:3.11-slim
 LABEL authors="Wenderson"
 
 
-WORKDIR /app
+WORKDIR /ProgramPrincipal/Inicializaçao
 
 
 COPY ProgramPrincipal .
