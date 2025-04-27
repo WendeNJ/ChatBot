@@ -54,8 +54,8 @@ def main():
             conectar_websocket(match_id)
             break
         else:
-            print("🔎 Esperando a FURIA jogar... tentando novamente em 60 segundos...")
-            time.sleep(60)
+            print("🔎 Esperando a FURIA jogar... tentando novamente em 10 Minutos...")
+            time.sleep(10000)
 
 
 if __name__ == "__main__":
