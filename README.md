@@ -32,6 +32,7 @@ Um chatbot informativo desenvolvido com Python para fornecer **dados atualizados
 - 🧪 **Gemini FURIA (Experimental)**
   - Chat inteligente com integração ao modelo Gemini.
 
+Toda a lógica está automatizada para reconectar em caso de falha e exibir o ID da partida e os eventos recebidos.
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -84,3 +85,11 @@ GEMINI_API_KEY= (API_REFERENTE)
 
 🙌 Contribuições e feedbacks são bem-vindos!
 
+---
+
+🔴 Atualização em tempo real dos jogos da FURIA (CS:GO)
+Implementei a integração com a API do PandaScore para detectar e acompanhar partidas ao vivo da FURIA no CS:GO.
+
+A aplicação consulta automaticamente partidas em andamento (/matches/running) e identifica se a FURIA está jogando.
+
+Se uma partida for encontrada, a aplicação se conecta a um WebSocket do PandaScore, que fornece atualizações em tempo real da partida.
