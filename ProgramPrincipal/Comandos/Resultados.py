@@ -79,11 +79,15 @@ def kings_resultados(mensagem):
     resultados_kings = """
 ⚽ **Últimos Resultados da FURIA – Kings League Brasil 2025**:
 
-📅 29/03/2025 – ✅ FURIA 6 x 2 Dendele FC  
-📅 31/03/2025 – ✅ FURIA 4 x 2 Real Elite  
-📅 07/04/2025 – ✅ FURIA 5 x 0 Nyvelados FC  
-📅 14/04/2025 – ✅ FURIA 6 x 1 LOUD SC  
+📅 29/03/2025 – ✅ FURIA 6 x 2 Dendele FC
+📅 31/03/2025 – ✅ FURIA 4 x 2 Real Elite
+📅 07/04/2025 – ✅ FURIA 5 x 0 Nyvelados FC
+📅 14/04/2025 – ✅ FURIA 6 x 1 LOUD SC
 📅 21/04/2025 – ✅ FURIA 9 x 7 G3X FC
+📅 26/04/2025 – 🟡 FURIA 5 x 5 Desimpedidos Goti (derrota nos shootouts)
+📅 28/04/2025 – ✅ FURIA 4 x 2 Capim FC
+
+*REFERENTES AS ULTIMAS 7 RODADAS
 
 /Menu 📜 Voltar ao menu principal
 """
