@@ -1,52 +1,86 @@
-# ChatBot FURIA
+# 🤖 ChatBot FURIA
 
-Este é um chatbot desenvolvido para fornecer informações sobre a FURIA Esports, incluindo dados sobre a organização, suas modalidades, resultados, redes sociais e suporte.
+Um chatbot informativo desenvolvido com Python para fornecer **dados atualizados e relevantes sobre a FURIA Esports**, como resultados, elenco, produtos oficiais e muito mais!
 
-## Funcionalidades
+---
 
-- **Informações sobre a FURIA**: História, modalidades, equipes e conquistas da organização.
-- **Redes Sociais**: Links para acompanhar a FURIA nas principais redes sociais.
-- **Suporte**: Contatos de suporte via e-mail e WhatsApp.
-- **Produtos Oficiais**: Acesso à loja oficial da FURIA para adquirir produtos como camisas, bonés e outros itens.
-- **Wallpaper**: Envio de wallpapers oficiais da FURIA.
-- **Comandos de Interação**: O bot oferece uma interface simples para interação com o usuário, permitindo acesso rápido aos dados da FURIA.
+## 📌 Funcionalidades
 
-## Tecnologias Utilizadas
+- 🏆 **Informações sobre a FURIA**
+  - História, modalidades e conquistas da organização.
+  - Elenco atualizado por modalidade.
 
-- **Python**: Linguagem utilizada para o desenvolvimento do bot.
-- **Telebot**: Biblioteca Python usada para a integração com a API do Telegram.
-- **GitHub**: Repositório para controle de versão e colaboração.
+- 📺 **Resultados e Jogos Ao Vivo**
+  - Últimos resultados em torneios.
+  - Status de partidas em andamento.
 
-## Como Rodar o Projeto
+- 🌐 **Redes Sociais**
+  - Links para Instagram, Twitter, Facebook, Instagram.
 
-### Pré-requisitos
+- 🛒 **Produtos Oficiais**
+  - Link direto para a loja oficial da FURIA.
 
-- Python 3.x
-- `pip` para gerenciar pacotes Python
+- 🖼️ **Wallpapers**
+  - Wallpapers oficiais para download.
 
-### Instalação
+- 💬 **Comandos interativos**
+  - Interface amigável via Telegram com comandos simples.
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/WendeNJ/ChatBot.git
-    cd ChatBot
-    ```
+- 🧠 **IA Integrada**
+  - Respostas automatizadas com base em inteligência artificial.
 
-2. Crie um ambiente virtual (opcional, mas recomendado):
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # Para Linux/Mac
-    .\venv\Scripts\activate  # Para Windows
-    ```
+- 🧪 **Gemini FURIA (Experimental)**
+  - Chat inteligente com integração ao modelo Gemini.
 
-3. Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
 
-4. Crie um arquivo `.env` para armazenar seu **token** do bot do Telegram e outros dados confidenciais.
+## 🛠️ Tecnologias Utilizadas
 
-### Configuração do `.env`
+- **Python 3**
+- **Telebot (pyTelegramBotAPI)**
+- **python-dotenv**
+- **Requests**
+- **GitHub (controle de versão)**
 
-Crie um arquivo `.env` na raiz do projeto e adicione o seguinte:
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clone o repositório:
+
+```bash
+git clone https://github.com/WendeNJ/ChatBot.git
+cd ChatBot
+
+ProgramPrincipal/
+├── Comandos/
+│   ├── Campeonatos.py
+│   ├── Elenco.py
+│   ├── Historia.py
+│   ├── IA.py
+│   ├── InLive.py
+│   ├── Produtos.py
+│   ├── RedesSociais.py
+│   ├── Resultados.py
+│   └── Wallpaper.py
+│
+├── Inicializacao/
+│   ├── AoVivo.py
+│   ├── bottelagram.py
+│   ├── ChatBotFuria.py
+│   └── GeminiFuria.py
+│
+├── .env
+
+4. Configure seu arquivo .env na raiz do projeto
+TELEGRAM_TOKEN= ( API_REFERENTE)
+PANDASCORE_TOKEN=  (API_REFERENTE)
+GEMINI_API_KEY= (API_REFERENTE)
+
+✅ Status do Projeto
+🚧 Em desenvolvimento contínuo
+
+🧪 Testes em novas funcionalidades com IA
+
+🙌 Contribuições e feedbacks são bem-vindos!
 
