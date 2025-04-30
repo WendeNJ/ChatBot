@@ -2,6 +2,8 @@
 
 Um chatbot informativo desenvolvido com Python para fornecer **dados atualizados e relevantes sobre a FURIA Esports**, como resultados, elenco, produtos oficiais e muito mais!
 
+
+⚠️ Nota: O histórico de commits contém algumas mensagens desorganizadas, pois durante o desenvolvimento foquei na entrega funcional. Reconheço a importância de boas práticas de versionamento e já estou aplicando isso em meus projetos seguintes.
 ---
 
 ## 📌 Funcionalidades
