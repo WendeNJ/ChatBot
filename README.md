@@ -49,6 +49,13 @@ Toda a lógica está automatizada para reconectar em caso de falha e exibir o ID
 
 ### 1. Clone o repositório:
 
+--- 
+2. Instale as dependências:
+Crie um ambiente virtual (opcional, mas recomendado) e execute:
+
+
+pip install -r requirements.txt
+
 ```bash
 git clone https://github.com/WendeNJ/ChatBot.git
 cd ChatBot
@@ -72,6 +79,7 @@ ProgramPrincipal/
 │   └── GeminiFuria.py
 │
 ├── .env
+├── requirements.txt
 
 4. Configure seu arquivo .env na raiz do projeto
 TELEGRAM_TOKEN= ( API_REFERENTE)
