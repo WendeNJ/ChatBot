@@ -49,33 +49,6 @@ src/
 
 ---
 
-## ▶️ Como Rodar Localmente
-
-### Pré-requisitos
-
-- Node.js 16+
-- npm ou yarn
-- Back-end rodando localmente (ver [OuvidoriaPremiumSite](https://github.com/WendeNJ/OuvidoriaPremiumSite))
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/WendeNJ/FrontPremium.git
-cd FrontPremium
-
-# 2. Instale as dependências
-npm install
-
-# 3. Configure a URL da API
-# Edite src/services/api.js com a URL do back-end local
-
-# 4. Inicie o servidor de desenvolvimento
-npm start
-```
-
-A aplicação estará disponível em `http://localhost:3000`
-
----
-
 ## 🌐 Em Produção
 
 👉 [premiumdb.com.br](https://www.premiumdb.com.br)
