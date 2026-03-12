@@ -1,21 +1,17 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-</p>
+# 🤖 ChatBot FURIA — Telegram + Gemini AI
 
-<h1 align="center">🤖 ChatBot FURIA</h1>
+[![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge)](https://github.com/WendeNJ/ChatBot)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org)
+[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 
-<p align="center">
-  Chatbot inteligente no Telegram com integração ao <b>Gemini AI</b>, dados em tempo real da FURIA Esports via <b>PandaScore API</b> e atualizações ao vivo via <b>WebSocket</b>.
-</p>
+Chatbot inteligente no Telegram com integração ao **Gemini AI**, dados em tempo real da FURIA Esports via **PandaScore API** e atualizações ao vivo via **WebSocket**.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-Chatbot desenvolvido em Python para fãs da FURIA Esports, trazendo informações atualizadas sobre o time diretamente no Telegram. O diferencial é a integração com **IA generativa (Gemini)** e monitoramento de partidas ao vivo via WebSocket.
+Chatbot desenvolvido em Python para fãs da FURIA Esports, trazendo informações atualizadas sobre o time diretamente no Telegram. O diferencial é a integração com **IA generativa (Gemini)** para respostas contextualizadas sobre a FURIA, e o monitoramento de partidas ao vivo via WebSocket.
 
 ---
 
@@ -25,13 +21,13 @@ Chatbot desenvolvido em Python para fãs da FURIA Esports, trazendo informaçõe
 |---|---|
 | 🏆 Informações da FURIA | História, modalidades e conquistas |
 | 👥 Elenco atualizado | Times por modalidade |
-| 📺 Resultados e Jogos ao Vivo | Partidas em andamento via PandaScore |
+| 📺 Resultados e partidas ao vivo | Via PandaScore API |
 | 🔴 WebSocket ao vivo | Eventos em tempo real durante as partidas |
-| 🌐 Redes Sociais | Links diretos para as redes da FURIA |
-| 🛒 Produtos Oficiais | Link para a loja oficial |
+| 🌐 Redes sociais | Links diretos para as redes da FURIA |
+| 🛒 Loja oficial | Link direto para produtos |
 | 🖼️ Wallpapers | Wallpapers oficiais para download |
-| 🧠 IA Integrada | Respostas automatizadas com Gemini AI |
-| 🧪 Gemini FURIA | Chat inteligente experimental com contexto da FURIA |
+| 🧠 IA integrada | Respostas automáticas com Gemini AI |
+| 🧪 Gemini FURIA | Chat inteligente com contexto exclusivo da FURIA |
 
 ---
 
@@ -57,7 +53,7 @@ ProgramPrincipal/
 │   ├── Campeonatos.py      # Info sobre campeonatos
 │   ├── Elenco.py           # Elenco atual da FURIA
 │   ├── Historia.py         # História da organização
-│   ├── IA.py               # Integração com IA
+│   ├── IA.py               # Integração com Gemini AI
 │   ├── InLive.py           # Partidas ao vivo (WebSocket)
 │   ├── Produtos.py         # Loja oficial
 │   ├── RedesSociais.py     # Links das redes sociais
@@ -76,23 +72,36 @@ ProgramPrincipal/
 
 ---
 
+## 🔴 Integração WebSocket — Partidas ao Vivo
+
+A aplicação monitora automaticamente partidas em andamento da FURIA consultando o endpoint `/matches/running` da PandaScore API. Quando uma partida é detectada, conecta-se via WebSocket para receber eventos em tempo real, com **reconexão automática** em caso de falha.
+
+```
+PandaScore API (/matches/running)
+        ↓ partida detectada
+WebSocket (eventos ao vivo)
+        ↓
+Telegram Bot → usuário
+```
+
+---
+
 ## ▶️ Como Executar
 
 ### Pré-requisitos
-- Python 3.8+
-- Chaves de API: Telegram Bot, PandaScore e Gemini
 
-### Passo a passo
+- Python 3.8+
+- Chaves de API: Telegram Bot, PandaScore e Gemini AI
 
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/WendeNJ/ChatBot.git
 cd ChatBot
 
-# 2. Crie e ative o ambiente virtual (recomendado)
+# 2. Crie e ative o ambiente virtual
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
 
 # 3. Instale as dependências
 pip install -r requirements.txt
@@ -116,12 +125,6 @@ python ProgramPrincipal/Inicializacao/ChatBotFuria.py
 
 ---
 
-## 🔴 Integração WebSocket — Partidas ao Vivo
-
-A aplicação monitora automaticamente partidas em andamento da FURIA no CS:GO consultando o endpoint `/matches/running` da PandaScore API. Quando uma partida é detectada, conecta-se ao WebSocket para receber eventos em tempo real, com reconexão automática em caso de falha.
-
----
-
 ## 🗺️ Roadmap
 
 - [x] Comandos básicos de informação
@@ -138,5 +141,5 @@ A aplicação monitora automaticamente partidas em andamento da FURIA no CS:GO c
 
 **Wenderson Carvalho de Araújo Mota**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-linkedin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wendersonmota/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/WendeNJ)
