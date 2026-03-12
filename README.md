@@ -1,33 +1,28 @@
-# 🤖 ChatBot FURIA — Telegram + Gemini AI
+# 🖥️ Front-End — Sistema de Ouvidoria Premium
 
-[![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge)](https://github.com/WendeNJ/ChatBot)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org)
-[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![Status](https://img.shields.io/badge/Status-Em_Produção-brightgreen?style=for-the-badge)](https://www.premiumdb.com.br)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-Chatbot inteligente no Telegram com integração ao **Gemini AI**, dados em tempo real da FURIA Esports via **PandaScore API** e atualizações ao vivo via **WebSocket**.
+Interface web do Sistema de Ouvidoria da **Premium Distribuidora**, desenvolvida em React e integrada à API REST back-end.
+
+🔗 **[Acessar aplicação »](https://www.premiumdb.com.br)**
 
 ---
 
 ## 📌 Sobre o Projeto
 
-Chatbot desenvolvido em Python para fãs da FURIA Esports, trazendo informações atualizadas sobre o time diretamente no Telegram. O diferencial é a integração com **IA generativa (Gemini)** para respostas contextualizadas sobre a FURIA, e o monitoramento de partidas ao vivo via WebSocket.
+Front-end responsivo e moderno para o sistema corporativo de ouvidoria da Premium Distribuidora. Permite que clientes e colaboradores registrem e acompanhem manifestações de forma simples e intuitiva.
 
 ---
 
 ## ✨ Funcionalidades
 
-| Funcionalidade | Descrição |
-|---|---|
-| 🏆 Informações da FURIA | História, modalidades e conquistas |
-| 👥 Elenco atualizado | Times por modalidade |
-| 📺 Resultados e partidas ao vivo | Via PandaScore API |
-| 🔴 WebSocket ao vivo | Eventos em tempo real durante as partidas |
-| 🌐 Redes sociais | Links diretos para as redes da FURIA |
-| 🛒 Loja oficial | Link direto para produtos |
-| 🖼️ Wallpapers | Wallpapers oficiais para download |
-| 🧠 IA integrada | Respostas automáticas com Gemini AI |
-| 🧪 Gemini FURIA | Chat inteligente com contexto exclusivo da FURIA |
+- 📝 Formulário de registro de manifestações (reclamações, sugestões, elogios, denúncias)
+- 🔍 Consulta de status por número de protocolo
+- 🏢 Landing page institucional da empresa
+- 📱 Layout responsivo para desktop, tablet e mobile
+- 🔗 Integração com API REST via HTTP/JSON
 
 ---
 
@@ -35,105 +30,62 @@ Chatbot desenvolvido em Python para fãs da FURIA Esports, trazendo informaçõe
 
 | Tecnologia | Uso |
 |---|---|
-| Python 3 | Linguagem principal |
-| pyTelegramBotAPI (Telebot) | Integração com Telegram |
-| PandaScore API | Dados de partidas e resultados |
-| WebSocket | Atualizações em tempo real |
-| Gemini AI (Google) | IA generativa para chat inteligente |
-| python-dotenv | Gerenciamento de variáveis de ambiente |
-| Requests | Chamadas HTTP às APIs |
+| React | Biblioteca de UI |
+| JavaScript (ES6+) | Linguagem principal |
+| HTML5 / CSS3 | Estrutura e estilização |
+| Fetch API | Comunicação com back-end |
 
 ---
 
 ## 🏗️ Estrutura do Projeto
 
 ```
-ProgramPrincipal/
-├── Comandos/
-│   ├── Campeonatos.py      # Info sobre campeonatos
-│   ├── Elenco.py           # Elenco atual da FURIA
-│   ├── Historia.py         # História da organização
-│   ├── IA.py               # Integração com Gemini AI
-│   ├── InLive.py           # Partidas ao vivo (WebSocket)
-│   ├── Produtos.py         # Loja oficial
-│   ├── RedesSociais.py     # Links das redes sociais
-│   ├── Resultados.py       # Últimos resultados
-│   └── Wallpaper.py        # Wallpapers oficiais
-│
-├── Inicializacao/
-│   ├── AoVivo.py           # Monitor de partidas em andamento
-│   ├── bottelagram.py      # Configuração do bot Telegram
-│   ├── ChatBotFuria.py     # Ponto de entrada principal
-│   └── GeminiFuria.py      # Chat experimental com Gemini
-│
-├── .env                    # Variáveis de ambiente (não versionar)
-└── requirements.txt        # Dependências do projeto
+src/
+├── components/     # Componentes reutilizáveis
+├── pages/          # Páginas da aplicação
+├── services/       # Integração com a API
+└── assets/         # Imagens e recursos estáticos
 ```
 
 ---
 
-## 🔴 Integração WebSocket — Partidas ao Vivo
-
-A aplicação monitora automaticamente partidas em andamento da FURIA consultando o endpoint `/matches/running` da PandaScore API. Quando uma partida é detectada, conecta-se via WebSocket para receber eventos em tempo real, com **reconexão automática** em caso de falha.
-
-```
-PandaScore API (/matches/running)
-        ↓ partida detectada
-WebSocket (eventos ao vivo)
-        ↓
-Telegram Bot → usuário
-```
-
----
-
-## ▶️ Como Executar
+## ▶️ Como Rodar Localmente
 
 ### Pré-requisitos
 
-- Python 3.8+
-- Chaves de API: Telegram Bot, PandaScore e Gemini AI
+- Node.js 16+
+- npm ou yarn
+- Back-end rodando localmente (ver [OuvidoriaPremiumSite](https://github.com/WendeNJ/OuvidoriaPremiumSite))
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/WendeNJ/ChatBot.git
-cd ChatBot
+git clone https://github.com/WendeNJ/FrontPremium.git
+cd FrontPremium
 
-# 2. Crie e ative o ambiente virtual
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+# 2. Instale as dependências
+npm install
 
-# 3. Instale as dependências
-pip install -r requirements.txt
+# 3. Configure a URL da API
+# Edite src/services/api.js com a URL do back-end local
 
-# 4. Configure as variáveis de ambiente
-cp .env.example .env
+# 4. Inicie o servidor de desenvolvimento
+npm start
 ```
 
-### Configuração do `.env`
-
-```env
-TELEGRAM_TOKEN=seu_token_aqui
-PANDASCORE_TOKEN=seu_token_aqui
-GEMINI_API_KEY=sua_chave_aqui
-```
-
-```bash
-# 5. Execute o bot
-python ProgramPrincipal/Inicializacao/ChatBotFuria.py
-```
+A aplicação estará disponível em `http://localhost:3000`
 
 ---
 
-## 🗺️ Roadmap
+## 🌐 Em Produção
 
-- [x] Comandos básicos de informação
-- [x] Integração com PandaScore API
-- [x] Monitoramento ao vivo via WebSocket
-- [x] IA com Gemini integrado
-- [ ] Suporte a mais modalidades além de CS:GO
-- [ ] Notificações automáticas de início de partida
-- [ ] Dashboard web para administração
+👉 [premiumdb.com.br](https://www.premiumdb.com.br)
+
+---
+
+## 🔗 Repositório do Back-end
+
+A API back-end deste projeto está em:  
+👉 [github.com/WendeNJ/OuvidoriaPremiumSite](https://github.com/WendeNJ/OuvidoriaPremiumSite)
 
 ---
 
