@@ -1,70 +1,69 @@
-# 🖥️ Front-End — Sistema de Ouvidoria Premium
+# 🤖 ChatBot FURIA — Telegram + IA
 
-[![Status](https://img.shields.io/badge/Status-Em_Produção-brightgreen?style=for-the-badge)](https://www.premiumdb.com.br)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+Bot para Telegram desenvolvido em Python com comandos relacionados à FURIA e integração com IA generativa.
 
-Interface web do Sistema de Ouvidoria da **Premium Distribuidora**, desenvolvida em React e integrada à API REST back-end.
-
-🔗 **[Acessar aplicação »](https://www.premiumdb.com.br)**
-
----
-
-## 📌 Sobre o Projeto
-
-Front-end responsivo e moderno para o sistema corporativo de ouvidoria da Premium Distribuidora. Permite que clientes e colaboradores registrem e acompanhem manifestações de forma simples e intuitiva.
-
----
+O projeto reúne funcionalidades de consulta, conteúdo e interação em módulos separados, além de integração com serviços externos.
 
 ## ✨ Funcionalidades
 
-- 📝 Formulário de registro de manifestações (reclamações, sugestões, elogios, denúncias)
-- 🔍 Consulta de status por número de protocolo
-- 🏢 Landing page institucional da empresa
-- 📱 Layout responsivo para desktop, tablet e mobile
-- 🔗 Integração com API REST via HTTP/JSON
+- Integração com **Telegram Bot API**
+- Comando com **Gemini** para respostas em linguagem natural
+- Consulta de campeonatos, resultados e informações do elenco
+- Recursos para partidas ao vivo
+- Conteúdos sobre história, produtos, redes sociais e wallpapers
+- Organização dos comandos em módulos independentes
 
----
+## 🧱 Estrutura
+
+```text
+ProgramPrincipal/
+├── Comandos/
+│   ├── Campeonatos.py
+│   ├── Elenco.py
+│   ├── Historia.py
+│   ├── IA.py
+│   ├── InLive.py
+│   ├── Produtos.py
+│   ├── RedesSociais.py
+│   ├── Resultados.py
+│   └── Wallpaper.py
+├── Inicializacao/
+├── Procfile
+└── requirements.txt
+```
 
 ## 🛠️ Tecnologias
 
-| Tecnologia | Uso |
-|---|---|
-| React | Biblioteca de UI |
-| JavaScript (ES6+) | Linguagem principal |
-| HTML5 / CSS3 | Estrutura e estilização |
-| Fetch API | Comunicação com back-end |
+`Python` `pyTelegramBotAPI` `Gemini` `Requests` `python-dotenv`
 
----
+## ▶️ Como executar
 
-## 🏗️ Estrutura do Projeto
-
-```
-src/
-├── components/     # Componentes reutilizáveis
-├── pages/          # Páginas da aplicação
-├── services/       # Integração com a API
-└── assets/         # Imagens e recursos estáticos
+```bash
+git clone https://github.com/WendeNJ/ChatBot.git
+cd ChatBot/ProgramPrincipal
+python -m venv .venv
 ```
 
----
+Ative o ambiente virtual e instale as dependências:
 
-## 🌐 Em Produção
+```bash
+pip install -r requirements.txt
+```
 
-👉 [premiumdb.com.br](https://www.premiumdb.com.br)
+Configure as variáveis de ambiente utilizadas pelo bot e pelas integrações antes de iniciar a aplicação.
 
----
+> Nunca envie tokens, chaves de API ou arquivos `.env` para o repositório.
 
-## 🔗 Repositório do Back-end
+## 🎯 O que este projeto demonstra
 
-A API back-end deste projeto está em:  
-👉 [github.com/WendeNJ/OuvidoriaPremiumSite](https://github.com/WendeNJ/OuvidoriaPremiumSite)
-
----
+- Integração com APIs externas
+- Desenvolvimento de bots
+- Organização modular de funcionalidades
+- Tratamento de comandos e respostas
+- Uso de IA generativa em uma aplicação real
 
 ## 👨‍💻 Autor
 
 **Wenderson Carvalho de Araújo Mota**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wendersonmota/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/WendeNJ)
+[LinkedIn](https://www.linkedin.com/in/wendersonmota/) · [GitHub](https://github.com/WendeNJ)
